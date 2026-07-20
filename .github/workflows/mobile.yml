@@ -2,7 +2,7 @@ name: Mobile Tests
 
 on:
   push:
-    branches: [ "ci" ]
+    branches: ["ci"]
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,8 @@ jobs:
 
       - name: Executar testes
         env:
+          ENVIRONMENT: saucelabs
+          PLATFORM: ios
           SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
           SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
         run: npm run test:login
