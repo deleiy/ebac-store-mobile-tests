@@ -20,9 +20,9 @@ export const sauceConf = {
                 'appium:disableIdLocatorAutocompletion': true,
                 'sauce:options': {
                     build: 'appium-build-teste-ebacshop-android',
-                    name: 'Ebac Shop Teste',
+                    name: 'Ebac Shop Teste Android',
                     deviceOrientation: 'PORTRAIT',
-                    appiumVersion: '2.0.0'
+                    appiumVersion: 'latest'
                 }
             }
         ]
@@ -34,12 +34,10 @@ export const sauceConf = {
                 'appium:platformVersion': '17',
                 'appium:automationName': 'XCUITest',
                 'sauce:options': {
-                    'sauce:options': {
-                        build: 'appium-build-teste-ebacshop-ios',
-                        name: 'Ebac Shop Teste',
-                        deviceOrientation: 'PORTRAIT',
-                        appiumVersion: 'latest'
-                    }
+                    build: 'appium-build-teste-ebacshop-ios',
+                    name: 'Ebac Shop Teste iOS',
+                    deviceOrientation: 'PORTRAIT',
+                    appiumVersion: 'latest'
                 }
             }
         ],
