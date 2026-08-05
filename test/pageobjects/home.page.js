@@ -1,4 +1,4 @@
-import { $ } from '@wdio/globals'
+import { $, driver } from '@wdio/globals'
 
 class HomePage {
 
