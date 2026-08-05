@@ -3,11 +3,11 @@ import { $ } from '@wdio/globals'
 class HomePage {
 
     async openMenu(menu){
-        await $(`id:tab-${menu}`).click()
-    }
 
-    async search(){
-        (await $(`-ios predicate string:name ENDSWITH "Search Products"`)).click()
+        const source = await driver.getPageSource()
+        console.log(source)
+
+        await $(`id:tab-${menu}`).click()
     }
 
 }
